@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+static NSString *appKey = @"0288a2546f5077b4a1d06097";
+static NSString *channel = @"Publish channel";
+static BOOL isProduction = FALSE;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;

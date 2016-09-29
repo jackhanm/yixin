@@ -1,0 +1,4 @@
+pod 'AMapLocation'  #定位 SDK
+pod 'AMap2DMap'  #2D地图SDK
+pod 'AMapSearch' #搜索服务SDK
+pod 'UMengAnalytics-NO-IDFA'

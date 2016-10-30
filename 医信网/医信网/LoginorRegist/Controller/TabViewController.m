@@ -12,11 +12,13 @@
 #import "heallist.h"
 #import "hospitalWeb.h"
 #import "CustomUserLocationViewController.h"
+#import "MineVC.h"
 @interface TabViewController ()
 @property (nonatomic ,retain)Nearhopital *nearhospital;
 @property (nonatomic, retain)healBook *healbook;
 @property (nonatomic, retain)heallist *heallist;
 @property (nonatomic, retain)hospitalWeb *hospitalWeb;
+@property (nonatomic, retain)MineVC *minevc;
 @end
 
 @implementation TabViewController
@@ -46,10 +48,16 @@
     UINavigationController *hospitalWebnc = [[UINavigationController alloc]initWithRootViewController:_hospitalWeb];
     hospitalWebnc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"医院官网" image:[UIImage imageNamed:@"yiyuanguanwang"] tag:10003];
     
+    _minevc = [[MineVC alloc]init];
+    UINavigationController *minenc = [[UINavigationController alloc]initWithRootViewController:_minevc];
+    minenc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"我的医信" image:[UIImage imageNamed:@""] tag:10003];
+    
+    
     self.viewControllers =  [NSArray arrayWithObjects:hospitalWebnc,nearhospitalnc,heallistnc, healbooknc,nil];
     self.tabBar.tintColor = [UIColor colorWithRed:0.2784 green:0.6039 blue:0.8667 alpha:1.0];
     
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

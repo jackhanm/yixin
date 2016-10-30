@@ -16,6 +16,7 @@
 #import "UMSocial.h"
 #import "JPUSHService.h"
 #import "GuideviewController.h"
+
 #ifdef NSFoundationVersionNumber_iOS_9_x_Max
 #import <UserNotifications/UserNotifications.h>
 
@@ -137,7 +138,7 @@
     }
 
    
-    
+    NSLog(@"%@", NSHomeDirectory());
 
     
     return YES;

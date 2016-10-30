@@ -81,6 +81,7 @@
         [self.Locationmanager requestWhenInUseAuthorization];
         NSLog(@"1");
         
+        
     }
     
     [self createview];
@@ -178,6 +179,8 @@
 }
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     
+      NSLog(@"%f %f", userLocation.coordinate.latitude , userLocation.coordinate.longitude);
+ 
     if (self.TYPE == YES) {
         self.jindu = userLocation.coordinate.latitude;
         self.weidu = userLocation.coordinate.longitude;
@@ -201,7 +204,7 @@
         request.location            = [AMapGeoPoint locationWithLatitude:self.jindu longitude:self.weidu];
         request.keywords            = @"医院";
         //     按照距离排序.
-        request.offset = 20;
+        request.offset = 100;
         request.sortrule            = 0;
         request.requireExtension    = YES;    // Do any additional setup after loading the view.
         [self.search AMapPOIAroundSearch:request];
@@ -210,7 +213,12 @@
         
         [self getAddressByLatitude:self.jindu longitude:self.weidu];
         [self setCenterCoordinate:userLocation.coordinate animated:YES];
+        [self.mapView setZoomLevel:16.1 animated:YES];
+        if (userLocation.coordinate.longitude == 0.000000) {
+            self.TYPE = YES;
+        } else {
         self.TYPE = NO;
+        }
     }
     
    
@@ -249,11 +257,11 @@
     self.mapView.delegate = self;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     self.mapView.showsCompass = YES;
-    self.mapView.compassOrigin = CGPointMake(0, 100/HEIGHTSIXP *HEIGHT);
+      self.mapView.compassOrigin = CGPointMake(0, 100/HEIGHTSIXP *HEIGHT);
     
     //设置地图类型
     self.mapView.mapType = MAMapTypeStandard;
-      [self.mapView setZoomLevel:16.1 animated:YES];
+//      [self.mapView setZoomLevel:16.1 animated:YES];
 
     [self.view addSubview:self.mapView];
 
@@ -287,7 +295,7 @@
     /* 如果有多个结果, 设置地图使所有的annotation都可见. */
     else
     {
-        [self.mapView showAnnotations:poiAnnotations animated:NO];
+//        [self.mapView showAnnotations:poiAnnotations animated:NO];
     }
 }
 #pragma mark - MAMapView Delegate

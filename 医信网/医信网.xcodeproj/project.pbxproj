@@ -41,6 +41,9 @@
 		6676BF251D9A156C0045B5B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6676BF241D9A156C0045B5B1 /* UIKit.framework */; };
 		6676BF271D9A157E0045B5B1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6676BF261D9A157E0045B5B1 /* Security.framework */; };
 		6676BF291D9A15930045B5B1 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6676BF281D9A15930045B5B1 /* AdSupport.framework */; };
+		66869BEF1DA8CC75007C5069 /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 66869BEE1DA8CC75007C5069 /* MineVC.m */; };
+		66869BF31DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 66869BF21DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.m */; };
+		66869BF51DA8F95C007C5069 /* 8005_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66869BF41DA8F95C007C5069 /* 8005_1x.png */; };
 		66B2A06F1D914E6300641117 /* mainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B2A06E1D914E6300641117 /* mainController.m */; };
 		66B4F1691D98D37700E75B44 /* POIAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4F1681D98D37700E75B44 /* POIAnnotation.m */; };
 		66B4F16F1D98D6DE00E75B44 /* PoiDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B4F16E1D98D6DE00E75B44 /* PoiDetailViewController.m */; };
@@ -163,6 +166,11 @@
 		6676BF241D9A156C0045B5B1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6676BF261D9A157E0045B5B1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6676BF281D9A15930045B5B1 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		66869BED1DA8CC75007C5069 /* MineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVC.h; sourceTree = "<group>"; };
+		66869BEE1DA8CC75007C5069 /* MineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
+		66869BF11DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+HeaderScaleImage.h"; sourceTree = "<group>"; };
+		66869BF21DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+HeaderScaleImage.m"; sourceTree = "<group>"; };
+		66869BF41DA8F95C007C5069 /* 8005_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8005_1x.png; sourceTree = "<group>"; };
 		66B2A06D1D914E6300641117 /* mainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainController.h; sourceTree = "<group>"; };
 		66B2A06E1D914E6300641117 /* mainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainController.m; sourceTree = "<group>"; };
 		66B4F1681D98D37700E75B44 /* POIAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIAnnotation.m; sourceTree = "<group>"; };
@@ -375,6 +383,48 @@
 				6676BF1A1D9A14FD0045B5B1 /* JPUSHService.h */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		66869BE91DA8CC07007C5069 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				66869BEA1DA8CC07007C5069 /* Controller */,
+				66869BEB1DA8CC07007C5069 /* Model */,
+				66869BEC1DA8CC07007C5069 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		66869BEA1DA8CC07007C5069 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				66869BED1DA8CC75007C5069 /* MineVC.h */,
+				66869BEE1DA8CC75007C5069 /* MineVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		66869BEB1DA8CC07007C5069 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66869BEC1DA8CC07007C5069 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66869BF01DA8DFC7007C5069 /* YZHeaderScaleImage */ = {
+			isa = PBXGroup;
+			children = (
+				66869BF11DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.h */,
+				66869BF21DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.m */,
+			);
+			path = YZHeaderScaleImage;
 			sourceTree = "<group>";
 		};
 		66B2A0571D914E0F00641117 /* Database */ = {
@@ -594,6 +644,7 @@
 		66B4F1831D98F74800E75B44 /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				66869BF01DA8DFC7007C5069 /* YZHeaderScaleImage */,
 				6676BF181D9A14FD0045B5B1 /* Lib */,
 				6676BECC1D9A0D580045B5B1 /* UMSocial_Sdk_5.2.1 */,
 				66B4F1841D98F91D00E75B44 /* AMap.bundle */,
@@ -627,6 +678,7 @@
 		7300E5F41C32CE770035C9E4 /* 医信网 */ = {
 			isa = PBXGroup;
 			children = (
+				66869BE91DA8CC07007C5069 /* Mine */,
 				7300E5F81C32CE770035C9E4 /* AppDelegate.h */,
 				7300E5F91C32CE770035C9E4 /* AppDelegate.m */,
 				66B2A0681D914E2100641117 /* Nearhopital */,
@@ -639,6 +691,7 @@
 				66B4F1831D98F74800E75B44 /* ThirdPart */,
 				7300E5FB1C32CE770035C9E4 /* ViewController.h */,
 				7300E5FC1C32CE770035C9E4 /* ViewController.m */,
+				66869BF41DA8F95C007C5069 /* 8005_1x.png */,
 				66E0126E1D9A5D350059BE97 /* guide1.jpg */,
 				66E012701D9A5D3B0059BE97 /* guide2.jpg */,
 				66E012721D9A5D420059BE97 /* guide3.jpg */,
@@ -824,6 +877,7 @@
 				66B4F1851D98F91D00E75B44 /* AMap.bundle in Resources */,
 				6676BF0E1D9A0D580045B5B1 /* UMSLoginViewController.xib in Resources */,
 				6676BF0B1D9A0D580045B5B1 /* UMSCommentInputControlleriPad.xib in Resources */,
+				66869BF51DA8F95C007C5069 /* 8005_1x.png in Resources */,
 				7300E6001C32CE770035C9E4 /* Main.storyboard in Resources */,
 				6676BF081D9A0D580045B5B1 /* WeiboSDK.bundle in Resources */,
 			);
@@ -905,11 +959,13 @@
 				660D6B5D1D98098A00548A8C /* hospitalWeb.m in Sources */,
 				66B4F1811D98D7CB00E75B44 /* NSArray+PureLayout.m in Sources */,
 				66B4F1721D98D75600E75B44 /* SubPoiListViewController.m in Sources */,
+				66869BF31DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.m in Sources */,
 				660D6B661D980A0500548A8C /* Nearhopital.m in Sources */,
 				660D6B631D9809DB00548A8C /* heallist.m in Sources */,
 				66E0126D1D9A58E90059BE97 /* GuideviewController.m in Sources */,
 				66B4F18B1D99018400E75B44 /* CustomUserLocationViewController.m in Sources */,
 				66B4F1691D98D37700E75B44 /* POIAnnotation.m in Sources */,
+				66869BEF1DA8CC75007C5069 /* MineVC.m in Sources */,
 				660D6B601D9809AA00548A8C /* healBook.m in Sources */,
 				7300E5FA1C32CE770035C9E4 /* AppDelegate.m in Sources */,
 				7300E5F71C32CE770035C9E4 /* main.m in Sources */,
@@ -1069,8 +1125,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Kunhoo Technology Co., Ltd. (E3X528ETB5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Kunhoo Technology Co., Ltd. (E3X528ETB5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1096,7 +1152,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ecbb3a47-de0f-4dba-862b-8bf03f7a9222";
+				PROVISIONING_PROFILE = "3613d0df-4af5-4f76-a077-9ac93192e149";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1107,8 +1163,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Hangzhou Kunhoo Technology Co., Ltd. (E3X528ETB5)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hangzhou Kunhoo Technology Co., Ltd. (E3X528ETB5)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1134,7 +1190,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ecbb3a47-de0f-4dba-862b-8bf03f7a9222";
+				PROVISIONING_PROFILE = "3613d0df-4af5-4f76-a077-9ac93192e149";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

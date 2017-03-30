@@ -14,6 +14,15 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 #import "UMMobClick/MobClick.h"
+typedef enum searchframe{
+    frame500meters = 500,
+    frame1000meters = 1000,
+    frame3000meters = 3000,
+    frame5000meters = 5000,
+    frame10000meters = 10000
+}SEARCHFRAME;
+
+
 #define WIDGHT [[UIScreen mainScreen] bounds].size.width
 #define WIDTHSIXP 375.000000
 #define HEIGHTSIXP 667.000000
@@ -34,7 +43,7 @@
 @property (nonatomic, retain) CLGeocoder *geocoder;
 @property (nonatomic , copy)NSString *lat;
 @property (nonatomic , copy)NSString *lat1;
-
+@property (nonatomic , assign)NSInteger framestate;
 @end
 
 @implementation Nearhopital
@@ -64,9 +73,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.TYPE = YES;
+    _framestate = frame3000meters;
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"附近医院";
-// 先定位
+    // 先定位
 //    地理编码
     self.geocoder = [[CLGeocoder alloc] init];
     // 定位管理器
@@ -179,7 +189,7 @@
 }
 - (void)mapView:(MAMapView *)mapView didUpdateUserLocation:(MAUserLocation *)userLocation updatingLocation:(BOOL)updatingLocation{
     
-      NSLog(@"%f %f", userLocation.coordinate.latitude , userLocation.coordinate.longitude);
+//      NSLog(@"%f %f", userLocation.coordinate.latitude , userLocation.coordinate.longitude);
  
     if (self.TYPE == YES) {
         self.jindu = userLocation.coordinate.latitude;
@@ -198,18 +208,8 @@
         //    request.cityLimit           = YES;
         //    request.requireSubPOIs      = YES;
         //
-        //    [self.search AMapPOIKeywordsSearch:request];
-        AMapPOIAroundSearchRequest *request = [[AMapPOIAroundSearchRequest alloc] init];
-        
-        request.location            = [AMapGeoPoint locationWithLatitude:self.jindu longitude:self.weidu];
-        request.keywords            = @"医院";
-        //     按照距离排序.
-        request.offset = 100;
-        request.sortrule            = 0;
-        request.requireExtension    = YES;    // Do any additional setup after loading the view.
-        [self.search AMapPOIAroundSearch:request];
-        
-        NSLog(@"%f %f", userLocation.coordinate.latitude , userLocation.coordinate.longitude);
+        [self setupsearch:_framestate];
+      NSLog(@"%f %f", userLocation.coordinate.latitude , userLocation.coordinate.longitude);
         
         [self getAddressByLatitude:self.jindu longitude:self.weidu];
         [self setCenterCoordinate:userLocation.coordinate animated:YES];
@@ -223,6 +223,24 @@
     
    
 }
+- (void)setupsearch:(NSInteger)num
+{
+    //    [self.search AMapPOIKeywordsSearch:request];
+    AMapPOIAroundSearchRequest *request = [[AMapPOIAroundSearchRequest alloc] init];
+    
+    request.location            = [AMapGeoPoint locationWithLatitude:self.jindu longitude:self.weidu];
+    request.keywords            = @"医院";
+    //     按照距离排序.
+    request.offset = 100;
+    request.radius = _framestate;
+    NSLog(@"%ld", _framestate);
+    request.sortrule            = 0;
+    request.requireExtension    = YES;    // Do any additional setup after loading the view.
+    [self.search AMapPOIAroundSearch:request];
+
+}
+
+
 - (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate animated:(BOOL)animated
 {
   
@@ -257,14 +275,51 @@
     self.mapView.delegate = self;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
     self.mapView.showsCompass = YES;
-      self.mapView.compassOrigin = CGPointMake(0, 100/HEIGHTSIXP *HEIGHT);
+      self.mapView.compassOrigin = CGPointMake(0, 150/HEIGHTSIXP *HEIGHT);
     
     //设置地图类型
     self.mapView.mapType = MAMapTypeStandard;
 //      [self.mapView setZoomLevel:16.1 animated:YES];
 
     [self.view addSubview:self.mapView];
-
+    NSArray *Arr = @[@"500米",@"1000米",@"3公里",@"5公里",@"10公里"];
+    for (int i = 0; i < 5; i ++) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        [button setTitle:[NSString stringWithFormat:@"%@", Arr[i]] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
+        [button addTarget:self action:@selector(changemeters:) forControlEvents:UIControlEventTouchUpInside];
+        [button setTag:i];
+//        button.layer.borderWidth=1;
+//        button.layer.borderColor = [[UIColor blueColor]CGColor];
+        button.frame = CGRectMake(0+i *75/WIDTHSIXP *WIDGHT, 70/ HEIGHTSIXP *HEIGHT, 70/ WIDTHSIXP * WIDGHT, 30/ HEIGHTSIXP * HEIGHT);
+        [self.view addSubview:button];
+        
+    }
+}
+- (void)changemeters:(UIButton *)sender
+{
+    if (sender.tag == 0) {
+        _framestate = frame500meters;
+        self.TYPE = YES;
+    }
+    if (sender.tag == 1) {
+        _framestate = frame1000meters;
+        self.TYPE = YES;
+    }
+    if (sender.tag == 2) {
+        _framestate = frame3000meters;
+        self.TYPE = YES;
+    }
+    if (sender.tag == 3) {
+        _framestate = frame5000meters;
+        self.TYPE = YES;
+    }if (sender.tag == 4) {
+        _framestate = frame10000meters;
+        self.TYPE = YES;
+    }
+    NSLog(@"fangfa");
+    
 }
 /* POI 搜索回调. */
 - (void)onPOISearchDone:(AMapPOISearchBaseRequest *)request response:(AMapPOISearchResponse *)response
@@ -295,7 +350,7 @@
     /* 如果有多个结果, 设置地图使所有的annotation都可见. */
     else
     {
-//        [self.mapView showAnnotations:poiAnnotations animated:NO];
+        [self.mapView showAnnotations:poiAnnotations animated:NO];
     }
 }
 #pragma mark - MAMapView Delegate

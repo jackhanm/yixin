@@ -171,9 +171,9 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
     if([notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
         [JPUSHService handleRemoteNotification:userInfo];
-        NSLog(@"iOS10 前台收到远程通知:%@", [self logDic:userInfo]);
-        
-        [rootViewController addNotificationCount];
+//        NSLog(@"iOS10 前台收到远程通知:%@", [self logDic:userInfo]);
+//        
+//        [rootViewController addNotificationCount];
         
     }
     else {
@@ -197,8 +197,8 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     
     if([response.notification.request.trigger isKindOfClass:[UNPushNotificationTrigger class]]) {
         [JPUSHService handleRemoteNotification:userInfo];
-        NSLog(@"iOS10 收到远程通知:%@", [self logDic:userInfo]);
-        [rootViewController addNotificationCount];
+//        NSLog(@"iOS10 收到远程通知:%@", [self logDic:userInfo]);
+//        [rootViewController addNotificationCount];
         
     }
     else {

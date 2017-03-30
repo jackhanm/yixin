@@ -13,6 +13,27 @@
 		660D6B631D9809DB00548A8C /* heallist.m in Sources */ = {isa = PBXBuildFile; fileRef = 660D6B621D9809DB00548A8C /* heallist.m */; };
 		660D6B661D980A0500548A8C /* Nearhopital.m in Sources */ = {isa = PBXBuildFile; fileRef = 660D6B651D980A0500548A8C /* Nearhopital.m */; };
 		660D6B691D980FFE00548A8C /* Jkwebview.m in Sources */ = {isa = PBXBuildFile; fileRef = 660D6B681D980FFE00548A8C /* Jkwebview.m */; };
+		6610FB791E28920C0032DF39 /* healthresouceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB781E28920C0032DF39 /* healthresouceViewController.m */; };
+		6610FB931E2892B30032DF39 /* HARootScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB7B1E2892B30032DF39 /* HARootScrollView.m */; };
+		6610FB941E2892B30032DF39 /* HARootScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB7D1E2892B30032DF39 /* HARootScrollViewCell.m */; };
+		6610FB951E2892B30032DF39 /* HARootScrollViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB7F1E2892B30032DF39 /* HARootScrollViewManager.m */; };
+		6610FB961E2892B30032DF39 /* HAAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB821E2892B30032DF39 /* HAAnimationTool.m */; };
+		6610FB971E2892B30032DF39 /* HACursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB841E2892B30032DF39 /* HACursor.m */; };
+		6610FB981E2892B30032DF39 /* HAItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB861E2892B30032DF39 /* HAItemManager.m */; };
+		6610FB991E2892B30032DF39 /* HAScrollNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB881E2892B30032DF39 /* HAScrollNavBar.m */; };
+		6610FB9A1E2892B30032DF39 /* HASortButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB8A1E2892B30032DF39 /* HASortButton.m */; };
+		6610FB9B1E2892B30032DF39 /* HASortItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB8C1E2892B30032DF39 /* HASortItemView.m */; };
+		6610FB9C1E2892B30032DF39 /* icons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6610FB8D1E2892B30032DF39 /* icons.bundle */; };
+		6610FB9D1E2892B30032DF39 /* UIColor+RGBA.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB8F1E2892B30032DF39 /* UIColor+RGBA.m */; };
+		6610FB9E1E2892B30032DF39 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FB911E2892B30032DF39 /* UIView+Extension.m */; };
+		6610FBA11E2893460032DF39 /* HATestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FBA01E2893460032DF39 /* HATestView.m */; };
+		6610FBA41E289C130032DF39 /* webview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6610FBA31E289C130032DF39 /* webview.m */; };
+		662554861DCC71A800D76F39 /* UINavigationBar+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = 662554851DCC71A800D76F39 /* UINavigationBar+PS.m */; };
+		662554891DCC71B100D76F39 /* UIView+PS.m in Sources */ = {isa = PBXBuildFile; fileRef = 662554881DCC71B100D76F39 /* UIView+PS.m */; };
+		6625548B1DCC73B300D76F39 /* PSBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6625548A1DCC73B300D76F39 /* PSBottomBar.m */; };
+		6625548F1DCC7A8B00D76F39 /* Mfirstcell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6625548E1DCC7A8B00D76F39 /* Mfirstcell.m */; };
+		664FBEAC1E29D4CF009251AB /* hospitallist.m in Sources */ = {isa = PBXBuildFile; fileRef = 664FBEAB1E29D4CF009251AB /* hospitallist.m */; };
+		664FBEAF1E29D50E009251AB /* hospitalroot.m in Sources */ = {isa = PBXBuildFile; fileRef = 664FBEAE1E29D50E009251AB /* hospitalroot.m */; };
 		6676BF041D9A0D580045B5B1 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6676BECD1D9A0D580045B5B1 /* UMSocialLocalizable.strings */; };
 		6676BF051D9A0D580045B5B1 /* libUMSocial_Sdk_5.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6676BEDB1D9A0D580045B5B1 /* libUMSocial_Sdk_5.2.1.a */; };
 		6676BF061D9A0D580045B5B1 /* libSocialSinaSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6676BEDD1D9A0D580045B5B1 /* libSocialSinaSSO.a */; };
@@ -108,6 +129,47 @@
 		660D6B651D980A0500548A8C /* Nearhopital.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nearhopital.m; sourceTree = "<group>"; };
 		660D6B671D980FFE00548A8C /* Jkwebview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jkwebview.h; sourceTree = "<group>"; };
 		660D6B681D980FFE00548A8C /* Jkwebview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jkwebview.m; sourceTree = "<group>"; };
+		6610FB771E28920C0032DF39 /* healthresouceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = healthresouceViewController.h; sourceTree = "<group>"; };
+		6610FB781E28920C0032DF39 /* healthresouceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = healthresouceViewController.m; sourceTree = "<group>"; };
+		6610FB7A1E2892B30032DF39 /* HARootScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARootScrollView.h; sourceTree = "<group>"; };
+		6610FB7B1E2892B30032DF39 /* HARootScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HARootScrollView.m; sourceTree = "<group>"; };
+		6610FB7C1E2892B30032DF39 /* HARootScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARootScrollViewCell.h; sourceTree = "<group>"; };
+		6610FB7D1E2892B30032DF39 /* HARootScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HARootScrollViewCell.m; sourceTree = "<group>"; };
+		6610FB7E1E2892B30032DF39 /* HARootScrollViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARootScrollViewManager.h; sourceTree = "<group>"; };
+		6610FB7F1E2892B30032DF39 /* HARootScrollViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HARootScrollViewManager.m; sourceTree = "<group>"; };
+		6610FB811E2892B30032DF39 /* HAAnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAAnimationTool.h; sourceTree = "<group>"; };
+		6610FB821E2892B30032DF39 /* HAAnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAAnimationTool.m; sourceTree = "<group>"; };
+		6610FB831E2892B30032DF39 /* HACursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HACursor.h; sourceTree = "<group>"; };
+		6610FB841E2892B30032DF39 /* HACursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HACursor.m; sourceTree = "<group>"; };
+		6610FB851E2892B30032DF39 /* HAItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAItemManager.h; sourceTree = "<group>"; };
+		6610FB861E2892B30032DF39 /* HAItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAItemManager.m; sourceTree = "<group>"; };
+		6610FB871E2892B30032DF39 /* HAScrollNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAScrollNavBar.h; sourceTree = "<group>"; };
+		6610FB881E2892B30032DF39 /* HAScrollNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAScrollNavBar.m; sourceTree = "<group>"; };
+		6610FB891E2892B30032DF39 /* HASortButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASortButton.h; sourceTree = "<group>"; };
+		6610FB8A1E2892B30032DF39 /* HASortButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASortButton.m; sourceTree = "<group>"; };
+		6610FB8B1E2892B30032DF39 /* HASortItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HASortItemView.h; sourceTree = "<group>"; };
+		6610FB8C1E2892B30032DF39 /* HASortItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HASortItemView.m; sourceTree = "<group>"; };
+		6610FB8D1E2892B30032DF39 /* icons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icons.bundle; sourceTree = "<group>"; };
+		6610FB8E1E2892B30032DF39 /* UIColor+RGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RGBA.h"; sourceTree = "<group>"; };
+		6610FB8F1E2892B30032DF39 /* UIColor+RGBA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RGBA.m"; sourceTree = "<group>"; };
+		6610FB901E2892B30032DF39 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		6610FB911E2892B30032DF39 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		6610FB9F1E2893410032DF39 /* HATestView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HATestView.h; sourceTree = "<group>"; };
+		6610FBA01E2893460032DF39 /* HATestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HATestView.m; sourceTree = "<group>"; };
+		6610FBA21E289C130032DF39 /* webview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webview.h; sourceTree = "<group>"; };
+		6610FBA31E289C130032DF39 /* webview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webview.m; sourceTree = "<group>"; };
+		662554841DCC71A400D76F39 /* UINavigationBar+PS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+PS.h"; sourceTree = "<group>"; };
+		662554851DCC71A800D76F39 /* UINavigationBar+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+PS.m"; sourceTree = "<group>"; };
+		662554871DCC71AD00D76F39 /* UIView+PS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PS.h"; sourceTree = "<group>"; };
+		662554881DCC71B100D76F39 /* UIView+PS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PS.m"; sourceTree = "<group>"; };
+		6625548A1DCC73B300D76F39 /* PSBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBottomBar.m; sourceTree = "<group>"; };
+		6625548C1DCC73BB00D76F39 /* PSBottomBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSBottomBar.h; sourceTree = "<group>"; };
+		6625548D1DCC7A8B00D76F39 /* Mfirstcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mfirstcell.h; sourceTree = "<group>"; };
+		6625548E1DCC7A8B00D76F39 /* Mfirstcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mfirstcell.m; sourceTree = "<group>"; };
+		664FBEAA1E29D4CF009251AB /* hospitallist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hospitallist.h; sourceTree = "<group>"; };
+		664FBEAB1E29D4CF009251AB /* hospitallist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hospitallist.m; sourceTree = "<group>"; };
+		664FBEAD1E29D50E009251AB /* hospitalroot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hospitalroot.h; sourceTree = "<group>"; };
+		664FBEAE1E29D50E009251AB /* hospitalroot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hospitalroot.m; sourceTree = "<group>"; };
 		6676BECE1D9A0D580045B5B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		6676BED01D9A0D580045B5B1 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		6676BED11D9A0D580045B5B1 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -281,6 +343,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6610FB801E2892B30032DF39 /* HARootScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				6610FB7A1E2892B30032DF39 /* HARootScrollView.h */,
+				6610FB7B1E2892B30032DF39 /* HARootScrollView.m */,
+				6610FB7C1E2892B30032DF39 /* HARootScrollViewCell.h */,
+				6610FB7D1E2892B30032DF39 /* HARootScrollViewCell.m */,
+				6610FB7E1E2892B30032DF39 /* HARootScrollViewManager.h */,
+				6610FB7F1E2892B30032DF39 /* HARootScrollViewManager.m */,
+			);
+			path = HARootScrollView;
+			sourceTree = "<group>";
+		};
+		6610FB921E2892B30032DF39 /* HACursor */ = {
+			isa = PBXGroup;
+			children = (
+				6610FB801E2892B30032DF39 /* HARootScrollView */,
+				6610FB811E2892B30032DF39 /* HAAnimationTool.h */,
+				6610FB821E2892B30032DF39 /* HAAnimationTool.m */,
+				6610FB831E2892B30032DF39 /* HACursor.h */,
+				6610FB841E2892B30032DF39 /* HACursor.m */,
+				6610FB851E2892B30032DF39 /* HAItemManager.h */,
+				6610FB861E2892B30032DF39 /* HAItemManager.m */,
+				6610FB871E2892B30032DF39 /* HAScrollNavBar.h */,
+				6610FB881E2892B30032DF39 /* HAScrollNavBar.m */,
+				6610FB891E2892B30032DF39 /* HASortButton.h */,
+				6610FB8A1E2892B30032DF39 /* HASortButton.m */,
+				6610FB8B1E2892B30032DF39 /* HASortItemView.h */,
+				6610FB8C1E2892B30032DF39 /* HASortItemView.m */,
+				6610FB8D1E2892B30032DF39 /* icons.bundle */,
+				6610FB8E1E2892B30032DF39 /* UIColor+RGBA.h */,
+				6610FB8F1E2892B30032DF39 /* UIColor+RGBA.m */,
+				6610FB901E2892B30032DF39 /* UIView+Extension.h */,
+				6610FB911E2892B30032DF39 /* UIView+Extension.m */,
+			);
+			name = HACursor;
+			path = "../../../../网易新闻页面/HACursor/HACursor";
+			sourceTree = "<group>";
+		};
 		6676BECC1D9A0D580045B5B1 /* UMSocial_Sdk_5.2.1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +501,12 @@
 			children = (
 				66869BED1DA8CC75007C5069 /* MineVC.h */,
 				66869BEE1DA8CC75007C5069 /* MineVC.m */,
+				662554841DCC71A400D76F39 /* UINavigationBar+PS.h */,
+				662554851DCC71A800D76F39 /* UINavigationBar+PS.m */,
+				662554871DCC71AD00D76F39 /* UIView+PS.h */,
+				662554881DCC71B100D76F39 /* UIView+PS.m */,
+				6625548C1DCC73BB00D76F39 /* PSBottomBar.h */,
+				6625548A1DCC73B300D76F39 /* PSBottomBar.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +521,8 @@
 		66869BEC1DA8CC07007C5069 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6625548D1DCC7A8B00D76F39 /* Mfirstcell.h */,
+				6625548E1DCC7A8B00D76F39 /* Mfirstcell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -438,6 +547,7 @@
 			isa = PBXGroup;
 			children = (
 				66B2A0591D914E0F00641117 /* Controller */,
+				6610FB921E2892B30032DF39 /* HACursor */,
 				66B2A05A1D914E0F00641117 /* model */,
 				66B2A05B1D914E0F00641117 /* View */,
 			);
@@ -449,6 +559,12 @@
 			children = (
 				660D6B611D9809DB00548A8C /* heallist.h */,
 				660D6B621D9809DB00548A8C /* heallist.m */,
+				6610FBA21E289C130032DF39 /* webview.h */,
+				6610FBA31E289C130032DF39 /* webview.m */,
+				6610FB771E28920C0032DF39 /* healthresouceViewController.h */,
+				6610FB781E28920C0032DF39 /* healthresouceViewController.m */,
+				6610FB9F1E2893410032DF39 /* HATestView.h */,
+				6610FBA01E2893460032DF39 /* HATestView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -515,6 +631,10 @@
 			children = (
 				660D6B5B1D98098A00548A8C /* hospitalWeb.h */,
 				660D6B5C1D98098A00548A8C /* hospitalWeb.m */,
+				664FBEAA1E29D4CF009251AB /* hospitallist.h */,
+				664FBEAB1E29D4CF009251AB /* hospitallist.m */,
+				664FBEAD1E29D50E009251AB /* hospitalroot.h */,
+				664FBEAE1E29D50E009251AB /* hospitalroot.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -822,6 +942,7 @@
 					7300E5F11C32CE770035C9E4 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = E3X528ETB5;
+						ProvisioningStyle = Manual;
 					};
 					7300E60A1C32CE770035C9E4 = {
 						CreatedOnToolsVersion = 7.2;
@@ -877,6 +998,7 @@
 				66B4F1851D98F91D00E75B44 /* AMap.bundle in Resources */,
 				6676BF0E1D9A0D580045B5B1 /* UMSLoginViewController.xib in Resources */,
 				6676BF0B1D9A0D580045B5B1 /* UMSCommentInputControlleriPad.xib in Resources */,
+				6610FB9C1E2892B30032DF39 /* icons.bundle in Resources */,
 				66869BF51DA8F95C007C5069 /* 8005_1x.png in Resources */,
 				7300E6001C32CE770035C9E4 /* Main.storyboard in Resources */,
 				6676BF081D9A0D580045B5B1 /* WeiboSDK.bundle in Resources */,
@@ -952,27 +1074,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6610FB9D1E2892B30032DF39 /* UIColor+RGBA.m in Sources */,
 				660D6B691D980FFE00548A8C /* Jkwebview.m in Sources */,
 				66B2A06F1D914E6300641117 /* mainController.m in Sources */,
 				66B4F1821D98D7CB00E75B44 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				7300E5FD1C32CE770035C9E4 /* ViewController.m in Sources */,
+				6610FBA41E289C130032DF39 /* webview.m in Sources */,
+				6625548F1DCC7A8B00D76F39 /* Mfirstcell.m in Sources */,
+				6610FB9E1E2892B30032DF39 /* UIView+Extension.m in Sources */,
 				660D6B5D1D98098A00548A8C /* hospitalWeb.m in Sources */,
+				6610FB791E28920C0032DF39 /* healthresouceViewController.m in Sources */,
 				66B4F1811D98D7CB00E75B44 /* NSArray+PureLayout.m in Sources */,
 				66B4F1721D98D75600E75B44 /* SubPoiListViewController.m in Sources */,
 				66869BF31DA8DFC7007C5069 /* UIScrollView+HeaderScaleImage.m in Sources */,
 				660D6B661D980A0500548A8C /* Nearhopital.m in Sources */,
 				660D6B631D9809DB00548A8C /* heallist.m in Sources */,
+				6610FB9A1E2892B30032DF39 /* HASortButton.m in Sources */,
+				6610FB971E2892B30032DF39 /* HACursor.m in Sources */,
 				66E0126D1D9A58E90059BE97 /* GuideviewController.m in Sources */,
 				66B4F18B1D99018400E75B44 /* CustomUserLocationViewController.m in Sources */,
 				66B4F1691D98D37700E75B44 /* POIAnnotation.m in Sources */,
+				662554891DCC71B100D76F39 /* UIView+PS.m in Sources */,
+				6610FB931E2892B30032DF39 /* HARootScrollView.m in Sources */,
 				66869BEF1DA8CC75007C5069 /* MineVC.m in Sources */,
+				664FBEAF1E29D50E009251AB /* hospitalroot.m in Sources */,
+				664FBEAC1E29D4CF009251AB /* hospitallist.m in Sources */,
 				660D6B601D9809AA00548A8C /* healBook.m in Sources */,
 				7300E5FA1C32CE770035C9E4 /* AppDelegate.m in Sources */,
+				6625548B1DCC73B300D76F39 /* PSBottomBar.m in Sources */,
+				6610FB981E2892B30032DF39 /* HAItemManager.m in Sources */,
+				6610FB941E2892B30032DF39 /* HARootScrollViewCell.m in Sources */,
+				6610FB961E2892B30032DF39 /* HAAnimationTool.m in Sources */,
+				6610FB991E2892B30032DF39 /* HAScrollNavBar.m in Sources */,
 				7300E5F71C32CE770035C9E4 /* main.m in Sources */,
 				66B4F16F1D98D6DE00E75B44 /* PoiDetailViewController.m in Sources */,
+				6610FB951E2892B30032DF39 /* HARootScrollViewManager.m in Sources */,
 				660D6B5A1D9808A800548A8C /* TabViewController.m in Sources */,
+				662554861DCC71A800D76F39 /* UINavigationBar+PS.m in Sources */,
 				66B4F1801D98D7CB00E75B44 /* ALView+PureLayout.m in Sources */,
 				66B4F1881D99016C00E75B44 /* BaseMapViewController.m in Sources */,
+				6610FB9B1E2892B30032DF39 /* HASortItemView.m in Sources */,
+				6610FBA11E2893460032DF39 /* HATestView.m in Sources */,
 				66B4F1751D98D77A00E75B44 /* SubPoiDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1127,6 +1269,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
+				DEVELOPMENT_TEAM = E3X528ETB5;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1135,7 +1278,7 @@
 					"$(PROJECT_DIR)/医信网/LoginorRegist/ThirdPart/UMSocial_Sdk_5.2.1/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = "医信网/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1153,6 +1296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3613d0df-4af5-4f76-a077-9ac93192e149";
+				PROVISIONING_PROFILE_SPECIFIER = yixin929;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1165,6 +1309,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XIaowu Cao (K5943YW5LS)";
+				DEVELOPMENT_TEAM = E3X528ETB5;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1173,7 +1318,7 @@
 					"$(PROJECT_DIR)/医信网/LoginorRegist/ThirdPart/UMSocial_Sdk_5.2.1/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = "医信网/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1191,6 +1336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yixin.iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "3613d0df-4af5-4f76-a077-9ac93192e149";
+				PROVISIONING_PROFILE_SPECIFIER = yixin929;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

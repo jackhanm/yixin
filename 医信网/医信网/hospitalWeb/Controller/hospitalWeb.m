@@ -60,6 +60,8 @@
 }
 - (void)createview
 {
+    
+    
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 0, 0)];
     [self.view addSubview:view];
     //    self.webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
@@ -115,10 +117,10 @@
                    forKeyPath:@"estimatedProgress"
                       options:NSKeyValueObservingOptionNew
                       context:nil];
-    
-    
+   
     
 }
+
 - (void)goback {
     if ([self.webView canGoBack]) {
         [self.webView goBack];

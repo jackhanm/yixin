@@ -9,15 +9,15 @@
 #import "TabViewController.h"
 #import "Nearhopital.h"
 #import "healBook.h"
-#import "heallist.h"
-#import "hospitalWeb.h"
+#import "healthresouceViewController.h"
+#import "hospitalroot.h"
 #import "CustomUserLocationViewController.h"
 #import "MineVC.h"
 @interface TabViewController ()
 @property (nonatomic ,retain)Nearhopital *nearhospital;
 @property (nonatomic, retain)healBook *healbook;
-@property (nonatomic, retain)heallist *heallist;
-@property (nonatomic, retain)hospitalWeb *hospitalWeb;
+@property (nonatomic, retain)healthresouceViewController *heallist;
+@property (nonatomic, retain)hospitalroot *hospitalWeb;
 @property (nonatomic, retain)MineVC *minevc;
 @end
 
@@ -37,23 +37,23 @@
     
     _healbook = [[healBook alloc]init];
     UINavigationController *healbooknc = [[UINavigationController alloc]initWithRootViewController:_healbook];
-    healbooknc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"健康书籍" image:[UIImage imageNamed:@"jiankangshuji"] tag:10001];
+    healbooknc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"知名专家" image:[UIImage imageNamed:@"jiankangshuji"] tag:10001];
 
-    _heallist = [[heallist alloc]init];
+    _heallist = [[healthresouceViewController alloc]init];
     UINavigationController *heallistnc = [[UINavigationController alloc]initWithRootViewController:_heallist];
-    heallistnc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"健康分类" image:[UIImage imageNamed:@"jiankangfenlei"] tag:10002];
+    heallistnc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"健康资源" image:[UIImage imageNamed:@"jiankangfenlei"] tag:10002];
 
     
-    _hospitalWeb = [[hospitalWeb alloc]init];
+    _hospitalWeb = [[hospitalroot alloc]init];
     UINavigationController *hospitalWebnc = [[UINavigationController alloc]initWithRootViewController:_hospitalWeb];
-    hospitalWebnc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"医院官网" image:[UIImage imageNamed:@"yiyuanguanwang"] tag:10003];
+    hospitalWebnc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"健康分类" image:[UIImage imageNamed:@"yiyuanguanwang"] tag:10003];
     
     _minevc = [[MineVC alloc]init];
     UINavigationController *minenc = [[UINavigationController alloc]initWithRootViewController:_minevc];
-    minenc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"我的医信" image:[UIImage imageNamed:@""] tag:10003];
+    minenc.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"我的医信" image:[UIImage imageNamed:@"我的"] tag:10003];
     
     
-    self.viewControllers =  [NSArray arrayWithObjects:hospitalWebnc,nearhospitalnc,heallistnc, healbooknc,nil];
+    self.viewControllers =  [NSArray arrayWithObjects:hospitalWebnc,nearhospitalnc,healbooknc,heallistnc, minenc,nil];
     self.tabBar.tintColor = [UIColor colorWithRed:0.2784 green:0.6039 blue:0.8667 alpha:1.0];
     
 }
